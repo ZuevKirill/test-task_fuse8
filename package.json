@@ -1,0 +1,28 @@
+{
+  "name": "test-task-fuse8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ],
+  "scripts": {
+    "clean": "rm -r dist",
+    "start": "parcel src/index.html --open",
+    "build-prod": "rm -rf /dist/* && parcel build src/index.html --public-url ./"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "parcel-bundler": "^1.12.5"
+  }
+}
